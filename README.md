@@ -26,11 +26,58 @@ The second method in processing and classifying data was the VGG16 CNN whose not
 
 ![VGG](https://it.mathworks.com/content/mathworks/it/it/discovery/convolutional-neural-network/_jcr_content/mainParsys/image_copy.adapt.full.high.jpg/1523891801700.jpg)
 
-### Modeling
+### Modeling - Statistical
 Several models were used to classify the deposits with varying degrees of accuracy.
   - [Random Forest Multi Class Baseline](https://github.com/geomms/Unearthed_Explore_Australia_Flatiron_School_Capstone_Project/blob/master/Baseline%20Model%20Random%20Forest.ipynb): 
     - Accuracy: 
       - Train: 0.9826
       - Test: 0.5697
-     - Balanced Accuracy:
-      -
+    - Balanced Accuracy:
+      - Train: 0.9619
+      - Test: 0.3080
+  - [Binary Classification](https://github.com/geomms/Unearthed_Explore_Australia_Flatiron_School_Capstone_Project/blob/master/Binary%20Classification.ipynb) - Random Forest:
+    - Accuracy:
+      - Train: 0.8372
+      - Test: 0.8250
+    - Balanced Accuracy:
+      - Train: 0.6451
+      - Test: 0.6174
+  - LGBM Classifier:
+    - Accuracy:
+      - Train: 1.0
+      - Test: 0.8416
+    - Balanced Accuracy:
+      - Train: 1.0
+      - Test: 0.6947
+  - XGBoost:
+    - Accuracy:
+      - Train: 1.0
+      - Test: 0.8274
+    - Balanced Accuracy:
+      - Train: 1.0
+      - Test: 0.6778
+  - Logistic Regression:
+    - Accuracy:
+      - Train: 0.7788
+      - Test: 0.7565
+    - Balanced Accuracy:
+      - Train: 0.7501
+      - Test: 0.6870
+### Modeling - VGG16 CNN Transfer Learning
+The model was trained using only a sample of 14 IDs of training data which trained for 2 and 4 epochs. It was then applied to the entire test set of 455 IDs. Notebook can be seen [here](https://github.com/geomms/Unearthed_Explore_Australia_Flatiron_School_Capstone_Project/blob/master/VGG16%20Test.ipynb)
+  - Two epoch model:
+     - Training completed in 17m 45s
+        - Best accuracy: 0.6974
+     - Evaluation completed in 100m 36s
+        - Avg loss (test): 0.0834
+        - Avg accuracy (test): 0.6709
+  - Four epoch model:
+     - Training completed in 28m 47s
+        - Best accuracy: 0.7500
+     - Evaluation completed in 76m 22s
+        - Avg loss (test): 0.0712
+        - Avg accuracy (test): 0.7463
+### Conclusion and Further Work
+The initial statistical models had certain perks, however the better method overall was the CNN with transfer learning since it only required a small training set to produce a good accuracy score. The neural network can be improved with training on the whole set or a larger training set as well as training for more epochs. The statistical models can also be improved with better feature engineering and integration with other types of data such as drill hole, seismic, geochemical, and other geologic data.
+
+For exploration purposes, the random forest model would work the best. It did miss some gold deposits, however, of the gold deposits predicted, only 5 of 28 were false positives. This means that if an miners were scouting these 28 potential sites, 23 would be successful targets. In other words it is better to be sure of the deposits that are predicted than to simply increase accuracy.
