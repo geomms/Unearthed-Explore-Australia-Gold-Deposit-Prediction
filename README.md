@@ -4,6 +4,7 @@
 
 ### Author: Mark Subra
 This project is the capstone project for the Data Science Immersive Bootcamp at Flatiron School. The project is based on the [Unearthed: Explorer Challenge](https://unearthed.solutions/u/challenge/1million-prize-pool-find-australias-next-big-mineral-deposit). The scale of the challenge was too large to be able to complete in the timeframe given, so a binary classification of gold mines was eventually decided to be the goal.
+
 ![Unearthed](https://unearthed.solutions/u/sites/default/files/challenge-images/unnamed.jpg)
 
 ## Presentation
