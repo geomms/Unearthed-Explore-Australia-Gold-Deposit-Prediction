@@ -8,7 +8,7 @@ This project is the capstone project for the Data Science Immersive Bootcamp at 
 ![Unearthed](https://unearthed.solutions/u/sites/default/files/challenge-images/unnamed.jpg)
 
 ## Presentation
-![Link to be added]()
+![Link to be added](https://www.youtube.com/watch?v=r1W00fVjhk8&feature=youtu.be)
 
 ### Business Understanding and Background
 Every year, each person in the United states uses [40,633 pounds of new minerals](https://mineralseducationcoalition.org/wp-content/uploads/2019-Mining-Cart-Per-Capita-color.pdf). Mining involves many challenges from exploration to environmental remediation. Ore-bearing, large-scale deposits are rare due to various geological processes taking place in combination over time. Predicting mineral deposits will lower exploration costs and unnecessary drilling and/or excavation which will also cause less harm to the environment.
