@@ -82,4 +82,4 @@ The initial statistical models had certain perks, however the better method over
 
 For exploration purposes, the random forest model would work the best. It did miss some gold deposits, however, of the gold deposits predicted, only 5 of 28 were false positives. This means that if an miners were scouting these 28 potential sites, 23 would be successful targets. In other words it is better to be sure of the deposits that are predicted than to simply increase accuracy.
 
-More work can be done using neural networks. VGG-16 is one pretrained model, but perhaps VGG-19 can be tried as well
+More work can be done using neural networks. VGG-16 is one pretrained model, but perhaps VGG-19 can be tried as well.
