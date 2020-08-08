@@ -81,6 +81,6 @@ The model was trained using only a sample of 14 IDs of training data which train
 ### Conclusion and Further Work
 The initial statistical models had certain perks, however the better method overall was the CNN with transfer learning since it only required a small training set to produce a good accuracy score. The neural network can be improved with training on the whole set or a larger training set as well as training for more epochs. The statistical models can also be improved with better feature engineering and integration with other types of data such as drill hole, seismic, geochemical, and other geologic data.
 
-For exploration purposes, the random forest model would work the best. It did miss some gold deposits, however, of the gold deposits predicted, only 5 of 28 were false positives. This means that if an miners were scouting these 28 potential sites, 23 would be successful targets. In other words it is better to be sure of the deposits that are predicted than to simply increase accuracy.
+For exploration purposes, the random forest model would work the best. It did miss some gold deposits, however, of the gold deposits predicted, only 5 of 28 were false positives. This means that if any miners were scouting these 28 potential sites, 23 would be successful targets. In other words it is better to be sure of the deposits that are predicted than to simply increase accuracy.
 
 More work can be done using neural networks. VGG-16 is one pretrained model, but perhaps VGG-19 can be tried as well.
